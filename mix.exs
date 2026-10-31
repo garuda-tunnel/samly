@@ -1,7 +1,7 @@
 defmodule Samly.Mixfile do
   use Mix.Project
 
-  @version "1.2.0"
+  @version "2.0.0"
   @description "SAML Single-Sign-On Authentication for Plug/Phoenix Applications"
   @source_url "https://github.com/dropbox/samly"
 
@@ -29,7 +29,8 @@ defmodule Samly.Mixfile do
   defp deps() do
     [
       {:plug, "~> 1.6"},
-      {:esaml, "~> 4.3"},
+      # Test against the exact esaml fork Firezone consumes.
+      {:esaml, github: "garuda-tunnel/esaml", tag: "v5.0.0"},
       {:sweet_xml, "~> 0.6"},
       {:ex_doc, "~> 0.19", only: :dev, runtime: false}
     ]

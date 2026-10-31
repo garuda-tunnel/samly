@@ -1,5 +1,12 @@
 # CHANGELOG
 
+## [2.0.0](https://github.com/garuda-tunnel/samly-internal/compare/v1.2.0...v2.0.0) (2026-10-31)
+
+
+### Bug Fixes
+
+* consume esaml from garuda-tunnel/esaml v5.0.0; CI and release pipeline ([#2](https://github.com/garuda-tunnel/samly-internal/issues/2)) ([6db3a2a](https://github.com/garuda-tunnel/samly-internal/commit/6db3a2a86b824b70a6bd2e7e944298eeeb3bfa66))
+
 ### v1.2.0
 +   Metadata can be specified directly in the IdP config rather than requiring a file
 +   Bumps dependencies
